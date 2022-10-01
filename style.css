@@ -1,0 +1,329 @@
+:root{
+    --main-margin-top:75px;
+    --main-margin-bottom:75px;
+    --Poppins-font:'Poppins', sans-serif;
+    --Rubic-font:'Rubik', sans-serif;
+    --main-font-color:#475677;
+    --sub-font-color:#7D8597;
+}
+*{
+    box-sizing: border-box;
+}
+/* start header */
+header .navbar{
+    font-family: var(--Rubic-font);
+    font-weight: 100;
+}
+
+header .navbar .navbar-nav{
+    color: var(--main-font-color);
+}
+header .navbar .navbar-nav .eng-icon{
+    margin-top: -4px;
+}
+header  .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end header */
+/* start landing */
+.landing{
+    background-image: url(media/Image.png);
+    height: calc(100vh - 72px);
+}
+.landing .text{
+    width: 70%;
+    font-family: var(--Poppins-font);
+}
+.landing .text h1{
+    font-size: 58px;
+}
+.landing .text h1+p{
+    font-size: 43px;
+    font-weight: 400;
+    color: #FFBE58;
+}
+.landing .text p:last-of-type{
+    width: 65%;
+    font-size: 18px;
+    font-family: var(--Rubic-font);
+    padding-top:1rem;
+}
+/* end landing */
+/* start select */
+.select{
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+}
+.select .main-select{
+    background-color: #FFBE58;
+    height: 135px;
+   
+}
+.select .main-select img{
+    margin: 14px;
+}
+.select .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    font-family: var(--Poppins-font);
+    color: var(--main-font-color);
+}
+.select .text p{
+    padding: 0;
+    margin: 0;
+}
+/* end select */
+/* start course */
+.course{
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+}
+.course .text{
+    color: var(--main-font-color);
+}
+.course .text p{
+    font-size: 38px;
+}
+.course .text button{
+    height: 50px!important;
+}
+.course  .title p,.course .title h5{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.course .title .text-h5{
+    padding-right: 0 !important;
+
+}
+.course .title .main-btn{
+    color: #00B592;
+    background-color: #00b59233;
+    padding: 0 2rem;
+    width: 140px;
+}
+
+.course .card .position-relative::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    font-weight: bold;
+    position: absolute;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #00B59290;
+    /* display: none; */
+}
+.course .card:hover .position-relative::before{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: block;
+    background-image: url(media/Ellipse\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(media/Paly\ icon.svg);
+    /* background-color: #00B59290; */
+}
+/* end course */
+/* start choose */
+.choose{
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+    color: var(--main-font-color);
+}
+.choose img{
+    width: 100%;
+    
+}
+.choose p{
+    font-family: var(--Poppins-font);
+}
+.choose h3{
+    font-family: var(--Poppins-font);
+    font-size: 50px;
+}
+.choose .rubic{
+    font-family: var(--Rubic-font);
+    font-size: 15px;
+}
+.choose ul{
+    list-style:circle ;
+}
+.choose ul li{
+    padding: 5px 0;
+    font-family: var(--Poppins-font);
+}
+/* end chosse */
+/* start ach */
+.ach{
+    background-color: #EFF7FF;
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+    color: var(--main-font-color);
+}
+.ach h2{
+    font-size: 48px;
+    font-family: var(--Poppins-font);
+
+}
+.ach h2+p{
+    width: 55%;
+    font-family: var(--Rubic-font);
+}
+.ach .num1{
+    color: #2680EB;
+    font-family: var(--Poppins-font);
+}
+.ach .num2{
+    color: #00B592;
+    font-family: var(--Poppins-font);
+}
+.ach .num3{
+    font-family: var(--Poppins-font);
+    color: #FFBE58;
+}
+.ach .num4{
+    font-family: var(--Poppins-font);
+    color: #E0474E;
+}
+.ach .row p{
+    font-family: var(--Rubic-font);
+    font-size: 15px;
+}
+/* end ach */
+/* start enroll */
+.enroll{
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+}
+.enroll .row .main-text{
+    font-size: 37px;
+}
+.enroll .row button{
+    height: 50px!important;
+}
+.enroll .card {
+    height: 383px;
+    
+}
+.enroll .card img{
+    width: 54px;
+    height: 54px;
+}
+.enroll .card .p1{
+    padding-top: 30px;}
+/* end enroll */
+/* start subscribe */
+.sub{
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+    color: var(--main-font-color);
+}
+.sub button{
+    background-color: #00B592;
+    border: 0;
+    margin-top:2rem ;
+    font-family: var(--Rubic-font);
+    height: 50px;
+    width: 200px;
+}
+.sub p{
+    font-size: 38px;
+    font-weight: 200;
+    font-family: var(--Poppins-font);
+    margin-bottom: 0 !important;
+}
+
+.sub h2{
+    font-size: 38px;
+    font-family: var(--main-font-color);
+}
+/* end subscribe */
+/* start footer */
+footer{
+    margin-top: var(--main-margin-top);
+    font-family: var(--Rubic-font);
+}
+footer button{
+    background-color: #334565;
+    width: 220px;
+    font-family: var(--Poppins-font);
+    
+}
+/* end footer */
+/* media */
+@media (max-width:1200px) {
+    .choose img{
+        height: 663px;
+        width: 596px;
+    }
+    .landing .text p:last-of-type{
+        width: 85%;
+    }
+    .ach h2+p{
+        width: 75%; 
+    }
+}
+
+@media (max-width:992px) {
+    .choose img{
+        height: auto;
+        width: 100%;
+
+    }
+    .choose .text{
+        padding: .7rem !important;
+    }
+    .course .text p{
+        font-size: 27px;
+    }
+    
+    .landing .text{
+        width: 100%;
+    }
+    .landing .text p:last-of-type{
+        width: 100%;
+    }
+    .ach h2+p{
+        width: 100%; 
+    }
+    .sub p{
+        font-size: 33px;
+    }
+}
+
+@media (max-width:767px) {
+    .course .text button{
+        width: 100%;
+    }
+
+    .landing .text h1{
+        font-size: 45px;
+    }
+    .landing .text h1+p{
+        font-size: 32px;
+    }
+    .ach h2{
+        font-size: 37px;
+    }
+    .ach h2+p{
+        width: 100%; 
+    }
+    .enroll button{
+        width: 100%;
+    }
+    .sub p{
+        font-size: 21px;
+    }
+    .sub h2{
+        font-size: 25px;
+    }
+
+}
